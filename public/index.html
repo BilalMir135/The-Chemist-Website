@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!--Faont Awesome CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <!--Education CSS-->
+    <link rel="stylesheet" href="css/education.css" />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/icon.png">
+    <title>The Chemist</title>
+  </head>
+  <body onload="preloader()">
+
+  <section id="loader">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <span>Loading</span>
+    </div>
+  </section>
+    
+  <section class="animate-bottom" id="main-body" style="display:none;">
+
+ 
+    <!---------------------------------Menu Starts--------------------------------->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="#">Research</a>
+        <a href="#contact-me">Contact</a>
+        <hr width="80%" />
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------------------Menu Ends--------------------------------->
+
+    <!---------------------------------Header Starts--------------------------------->
+    <header>
+      <div class="mainDiv">
+        <div class="top-header">
+          <a class="logo" href="#">The Chemist</a>
+          <span
+            class="menu-botton"
+            style="
+              font-size: 30px;
+              cursor: pointer;
+              float: right;
+              padding: 4px;
+            "
+            onclick="openNav()"
+            >&#9776;</span
+          >
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 content-mainDiv">
+              <div class="text">
+                <p>I CAN&nbsp</p>
+                <p>
+                  <span class="word">TEACH</span>
+                  <span class="word">RESEARCH</span>
+                  <span class="word">ANALYZE</span>
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                reiciendis! <br />
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+              <a href="#contact-me">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-image">
+          <img
+            src="images/3781878.jpg"
+            alt="image"
+            width="500px"
+            height="300px"
+          />
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,320L60,309.3C120,299,240,277,360,272C480,267,600,277,720,272C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <!---------------------------------Header Ends--------------------------------->
+
+    <!---------------------------------About Starts--------------------------------->
+    <section class="about py-5">
+      <div class="container text-center">
+        <h1 class="title">ABOUT</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+          debitis possimus deserunt, quis blanditiis maiores ab delectus ipsa
+          quam reprehenderit et laudantium. Consectetur in praesentium laborum
+          quo ratione labore fuga. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Molestiae incidunt reprehenderit, alias et officiis
+          ea nemo eum quod ut dolorum optio maxime sed explicabo quisquam
+          voluptate neque quidem expedita qui! voluptate neque quidem expedita
+          qui!
+        </p>
+      </div>
+    </section>
+    <!---------------------------------About ENDS--------------------------------->
+
+    <!---------------------------------Education Starts--------------------------------->
+    <section class="education">
+      <div class="container text-center">
+        <h1 class="title">EDUCATION</h1>
+        <div class="process-wrapper">
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active">
+                <div class="step-inner">MATRICULATION</div>
+              </li>
+              <li class="step step02">
+                <div class="step-inner">INTERMEDIATE</div>
+              </li>
+              <li class="step step03">
+                <div class="step-inner">BACHELOR'S</div>
+              </li>
+              <li class="step step04">
+                <div class="step-inner">MPhil</div>
+              </li>
+              <li class="step step05">
+                <div class="step-inner">B.ED</div>
+              </li>
+            </ul>
+
+            <div id="line">
+              <div id="line-progress"></div>
+            </div>
+          </div>
+
+          <div id="progress-content-section">
+            <div class="section-content discovery active">
+              <h2>MATRICULATION</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
+                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
+                in dapibus lorem. Suspendisse vitae velit ac ante consequat
+                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
+                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
+                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
+                sem odio, venenatis at ex a, lacinia suscipit orci.
+              </p>
+            </div>
+
+            <div class="section-content strategy">
+              <h2>INTERMEDIATE</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
+                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
+                in dapibus lorem. Suspendisse vitae velit ac ante consequat
+                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
+                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
+                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
+                sem odio, venenatis at ex a, lacinia suscipit orci.
+              </p>
+            </div>
+
+            <div class="section-content creative">
+              <h2>BACHELOR'S</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
+                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
+                in dapibus lorem. Suspendisse vitae velit ac ante consequat
+                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
+                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
+                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
+                sem odio, venenatis at ex a, lacinia suscipit orci.
+              </p>
+            </div>
+
+            <div class="section-content production">
+              <h2>MPhil</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
+                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
+                in dapibus lorem. Suspendisse vitae velit ac ante consequat
+                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
+                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
+                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
+                sem odio, venenatis at ex a, lacinia suscipit orci.
+              </p>
+            </div>
+
+            <div class="section-content analysis">
+              <h2>B.ED</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
+                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
+                in dapibus lorem. Suspendisse vitae velit ac ante consequat
+                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
+                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
+                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
+                sem odio, venenatis at ex a, lacinia suscipit orci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------Education Ends--------------------------------->
+
+    <!---------------------------------Experience Starts--------------------------------->
+    <section class="experience">
+      <div class="container text-center py-5">
+        <h1 class="title">EXPERIENCE</h1>
+        <div class="row py-3">
+          <div class="col-lg-4 py-3">
+            <i class="fa-4x fas fa-chalkboard-teacher"></i>
+            <h3>School Teacher</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+              fuga in ipsum est? Corporis enim, reiciendis quasi libero unde
+            </p>
+          </div>
+          <div class="col-lg-4 py-3">
+            <i class="fa-4x fas fa-flask"></i>
+            <h3>Research Assistant</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+              fuga in ipsum est? Corporis enim, reiciendis quasi libero unde
+            </p>
+          </div>
+          <div class="col-lg-4 py-3">
+            <i class="fa-4x fas fa-university"></i>
+            <h3>College Teacher</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+              fuga in ipsum est? Corporis enim, reiciendis quasi libero unde
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------Experience Ends--------------------------------->
+
+    <!---------------------------------Contact Starts--------------------------------->
+    <section class="contact" id="contact-me">
+      <div class="container text-center py-5">
+        <h1 class="title">CONTACT</h1>
+        <div class="row">
+          <div class="col-sm-12">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-2x fab fa-facebook-f" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-2x fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-2x fab fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-2x fab fa-whatsapp" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-2x fab fa-instagram" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>       
+    </section>
+    <!---------------------------------Contact Ends--------------------------------->
+
+    <!---------------------------------Modal Starts--------------------------------->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog text-center">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Thanks for Subscribing</h4>
+              <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <i class="fa-7x far fa-check-circle"></i>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <!---------------------------------Modal Ends--------------------------------->
+
+    <!---------------------------------Footer Starts--------------------------------->
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7f8fa" fill-opacity="1" d="M0,96L30,112C60,128,120,160,180,144C240,128,300,64,360,80C420,96,480,192,540,192C600,192,660,96,720,85.3C780,75,840,149,900,176C960,203,1020,181,1080,165.3C1140,149,1200,139,1260,133.3C1320,128,1380,128,1410,128L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 pb-5 px-5">
+            <a class="logo" href="#">The Chemist</a>
+            <p>Lorem ipsum dolor, sit amet consectetur 
+               adipisicing elit. Officia illum soluta assumenda fuga nulla sit amet consectetur 
+               adipisicing  amet consectetur  elit.</p>
+          </div>
+          <div class="col-lg-2  pb-5 px-5"">
+            <h2>LINKS</h2>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 pb-5 px-5"">
+            <h2>GET IN TOUCH</h2>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" required>
+              <div class="input-group-append">
+                <button class="btn " type="button" id="button-addon2"
+                data-toggle="modal" data-target="#myModal">Subscribe</button>
+              </div>
+            </div>
+            <ul>
+              <li><i class="fas fa-phone-alt"></i>+923012883771</li>
+              <li><i class="fas fa-envelope"></i>bilalmir135@gmail.com</li>
+            </ul>           
+          </div>
+      </div>
+      <hr width="95%">
+      <div>
+        <p class="text-center" style="font-weight: 600;">© All Rights reserved 2020 The Chemist.</p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa-2x fa fa-angle-up" id="myBtn"></i>
+      </div>
+      </div>
+    </footer>
+    <!---------------------------------Footer Ends--------------------------------->
+
+  </section>
+
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Popper JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Main JS-->
+    <script src="js/app.js"></script>
+
+    <!--Heading Text Animation JS-->
+    <script src="js/split.js"></script>
+
+    <!--Education JS-->
+    <script src="js/education.js"></script>
+  </body>
+</html>
