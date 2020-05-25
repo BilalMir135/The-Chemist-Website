@@ -206,6 +206,10 @@ button:active {
   padding-bottom: 80px;
 }
 
+.title {
+  color: #535274;
+}
+
 .title::before {
   content: '';
   background: #00cca0;
@@ -552,7 +556,105 @@ footer i {
   margin: auto;
   margin-bottom: 50px;
 }
+
 /********************************Testimonial Ends********************************/
+
+/********************************Contact ME Starts********************************/
+.contact-me {
+  width: 40%;
+  background: #fff;
+  padding: 50px;
+  margin: 30px auto;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form,
+.form-items {
+  width: 100%;
+}
+
+.form-items {
+  position: relative;
+}
+
+.form-items input,
+.form-items textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items textarea {
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none;
+}
+
+.form-items input:focus,
+.form-items textarea:focus {
+  border: 2px solid #00cca0;
+}
+
+.form-items input:focus + .form-items i {
+  color: #00cca0;
+}
+
+.form-items .fas {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9a99aa;
+}
+
+.contact-me button {
+  background: #00cca0;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.social-icons div .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/********************************Contact ME Ends********************************/
 
 /********************************Media Quries********************************/
 @media (max-width: 980px) {
@@ -592,6 +694,15 @@ footer i {
 
   .modal-header h4 {
     font-size: 25px;
+  }
+
+  #myBtn {
+    opacity: 0.5;
+  }
+
+  .contact-me {
+    width: 95%;
+    padding: 50px 20px;
   }
 }
 
