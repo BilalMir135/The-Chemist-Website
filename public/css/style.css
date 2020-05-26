@@ -34,6 +34,7 @@ button:active {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
+  z-index: 2;
 }
 
 .logo:hover {
@@ -42,7 +43,7 @@ button:active {
 }
 
 .top-header {
-  padding: 10px 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,15 +66,24 @@ button:active {
   z-index: 2;
 }
 
+.content-mainDiv h1 {
+  padding-bottom: 50px;
+  font-size: 4rem;
+}
+
 .content-mainDiv p {
   margin-bottom: 30px;
+}
+
+.content-mainDiv .intro-para {
+  width: 350px;
 }
 
 .content-mainDiv a {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 100px;
-  padding: 12px 35px;
+  padding: 12px 40px;
   font-weight: 600;
   font-size: 20px;
 }
@@ -656,6 +666,106 @@ form,
 
 /********************************Contact ME Ends********************************/
 
+/********************************Research Starts********************************/
+
+.research {
+  padding: 60px 0;
+}
+
+.research h2 {
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #00cca0;
+}
+
+.research h5 {
+  color: #555;
+  padding-bottom: 10px;
+}
+
+.research p {
+  padding-bottom: 20px;
+  line-height: 2rem;
+}
+
+.research a {
+  border: 1px solid #00cca0;
+  color: #00cca0;
+  border-radius: 100px;
+  padding: 12px 35px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.research a:hover {
+  color: #fff;
+  background-color: #00cca0;
+}
+/********************************Research Ends********************************/
+
+/********************************Certification Starts********************************/
+.box {
+  width: 320px;
+  position: relative;
+  padding: 100px 40px 60px;
+  margin: 10px 0;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00cca0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.box:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.box h2 {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  font-size: 4rem;
+  font-weight: 800;
+  opacity: 0.1;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.box:hover h2 {
+  opacity: 1;
+  color: #fff;
+  transform: translateY(-40px);
+}
+
+.box p {
+  position: relative;
+  z-index: 2;
+  color: #555;
+  transition: 0.5s;
+}
+
+.box span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box:hover p {
+  color: #fff;
+}
+/********************************Certification Ends********************************/
+
 /********************************Media Quries********************************/
 @media (max-width: 980px) {
   .overlay ul li a,
@@ -678,6 +788,10 @@ form,
     top: 50px;
     padding-left: 20px;
     padding-bottom: 10px;
+  }
+
+  .content-mainDiv .intro-para {
+    width: 320px;
   }
 
   .text p {
@@ -703,6 +817,10 @@ form,
   .contact-me {
     width: 95%;
     padding: 50px 20px;
+  }
+
+  .research h2 {
+    font-size: 24px;
   }
 }
 
