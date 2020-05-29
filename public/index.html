@@ -20,6 +20,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--Education CSS-->
     <link rel="stylesheet" href="css/education.css" />
 
@@ -28,7 +30,7 @@
     <link rel="icon" href="images/icon.png">
     <title>The Chemist</title>
   </head>
-  <body onload="preloader()">
+  <body onload="preloader()" id="index-body" style=" overflow: hidden;">
 
   <section id="loader">
     <div class="wrapper">
@@ -42,7 +44,7 @@
     </div>
   </section>
     
-  <section class="animate-bottom" id="main-body" style="display:none;">
+  <section id="main-body" style="display: none;">
 
  
     <!---------------------------------Menu Starts--------------------------------->
@@ -93,7 +95,7 @@
             ><i class="fas fa-bars"></i></span
           >
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid animate-bottom">
           <div class="row">
             <div class="col-lg-6 content-mainDiv">
               <div class="text">
@@ -131,20 +133,21 @@
       </div>
     </header>
     <!---------------------------------Header Ends--------------------------------->
-
+  
+  </section>
+  
     <!---------------------------------About Starts--------------------------------->
-    <section class="about py-5">
+    <section class="about py-5" data-aos="fade-up">
       <div class="container text-center">
         <h1 class="title">ABOUT</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
-          debitis possimus deserunt, quis blanditiis maiores ab delectus ipsa
-          quam reprehenderit et laudantium. Consectetur in praesentium laborum
-          quo ratione labore fuga. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Molestiae incidunt reprehenderit, alias et officiis
-          ea nemo eum quod ut dolorum optio maxime sed explicabo quisquam
-          voluptate neque quidem expedita qui! voluptate neque quidem expedita
-          qui!
+         Myself Aijaz Ali Laghari, a professional chemist with good
+         experience. Highly Dedicated and passionate towards chemistry. 
+         Done my MPhil in Analytical Chemistry in which I did 
+         research on the project "Producation Of Biodiesel From Spent Bleaching
+         Clay" from National Center of Excellence in Analytical Chemistry (NCEAC) 
+         located in University of Sindh, Jamshoro. Worked on biofuels, oils and fats 
+         and their quality assessment using different techniques like GC-MS, LC-MS, FTIR. 
         </p>
       </div>
     </section>
@@ -152,7 +155,7 @@
 
     <!---------------------------------Education Starts--------------------------------->
     <section class="education">
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-right">
         <h1 class="title">EDUCATION</h1>
         <div class="process-wrapper">
           <div id="progress-bar-container">
@@ -234,7 +237,7 @@
     <!---------------------------------Education Ends--------------------------------->
 
     <!---------------------------------Experience Starts--------------------------------->
-    <section class="experience">
+    <section class="experience" data-aos="zoom-in">
       <div class="container text-center py-5">
         <h1 class="title">EXPERIENCE</h1>
         <div class="row py-3">
@@ -268,7 +271,7 @@
 
     <!---------------------------------Contact Starts--------------------------------->
     <section class="contact" id="contact-me">
-      <div class="container text-center py-5">
+      <div class="container text-center py-5" data-aos="flip-left">
         <h1 class="title">CONTACT</h1>
         <div class="row">
           <div class="col-sm-12">
@@ -324,9 +327,10 @@
         <div class="row">
           <div class="col-lg-5 pb-5 px-5">
             <a class="logo" href="#">The Chemist</a>
-            <p>Lorem ipsum dolor, sit amet consectetur 
-               adipisicing elit. Officia illum soluta assumenda fuga nulla sit amet consectetur 
-               adipisicing  amet consectetur  elit.</p>
+            <p>A professional chemist with good experience.  
+              Done my MPhil in Analytical Chemistry in which I did 
+              research on the project "Producation Of Biodiesel From Spent Bleaching
+              Clay" from NCEAC located in University of Sindh, Jamshoro. </p>
           </div>
           <div class="col-lg-2  pb-5 px-5"">
             <h2>LINKS</h2>
@@ -352,9 +356,10 @@
             </ul>           
           </div>
       </div>
-      <hr width="95%">
-      <div>
-        <p class="text-center" style="font-weight: 600;">© All Rights reserved 2020 The Chemist.</p>
+      <hr width="100%">
+      <div class="end-footer">
+        <p>© All Rights reserved 2020 The Chemist.</p>
+        <p>Design & Deveveloped by <a href="https://thewebsters.netlify.app/index.html#" target="_blank"><img src="images/webster.png" alt="image" width="100px" height="20px"></a></p>   
       </div>
       <div class="scrolltop float-right">
         <i class="fa-2x fa fa-angle-up" id="myBtn"></i>
@@ -363,7 +368,14 @@
     </footer>
     <!---------------------------------Footer Ends--------------------------------->
 
-  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 250,
+      duration: 1000
+    });
+  </script>
 
     <!--Jquery-->
     <script
@@ -394,5 +406,7 @@
 
     <!--Education JS-->
     <script src="js/education.js"></script>
+
+
   </body>
 </html>

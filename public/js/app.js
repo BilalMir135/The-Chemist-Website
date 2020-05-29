@@ -37,4 +37,5 @@ function preloader() {
 function showPage() {
   document.getElementById('loader').style.display = 'none';
   document.getElementById('main-body').style.display = 'block';
+  document.getElementById('index-body').style.overflow = 'visible';
 }

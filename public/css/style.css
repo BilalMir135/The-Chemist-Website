@@ -26,6 +26,18 @@ button:active {
   box-shadow: none;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #009c6e;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
 /********************************Header Starts********************************/
 
 .logo {
@@ -295,6 +307,7 @@ button:active {
 footer {
   background: #00cca0;
   color: #fff;
+  overflow: hidden;
 }
 
 footer li {
@@ -358,6 +371,19 @@ footer i {
 .input-group button:active {
   outline: none;
   box-shadow: none;
+}
+
+.end-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.end-footer p {
+  font-weight: 600;
+  font-size: 18px;
 }
 
 #myBtn {
@@ -684,6 +710,7 @@ form,
 }
 
 .research p {
+  font-size: 18px;
   padding-bottom: 20px;
   line-height: 2rem;
 }
@@ -701,6 +728,10 @@ form,
 .research a:hover {
   color: #fff;
   background-color: #00cca0;
+}
+
+.research .bio img {
+  width: 100%;
 }
 /********************************Research Ends********************************/
 
@@ -774,11 +805,12 @@ form,
   }
 
   .header-image {
-    top: 80px;
-    right: 0px;
+    top: 100px;
+    left: 0;
+    right: 0;
   }
   .header-image img {
-    height: 200px;
+    height: 300px;
     width: 400px;
     opacity: 0.3;
     z-index: -1;
@@ -788,6 +820,7 @@ form,
     top: 50px;
     padding-left: 20px;
     padding-bottom: 10px;
+    height: 40vh;
   }
 
   .content-mainDiv .intro-para {
@@ -822,6 +855,16 @@ form,
   .research h2 {
     font-size: 24px;
   }
+
+  .end-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .end-footer p {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /********************************Preloader Starts********************************/
@@ -840,6 +883,7 @@ form,
   transform: translate(-50%, -50%);
   background: #00cca0;
 }
+
 .circle {
   width: 20px;
   height: 20px;
@@ -933,19 +977,19 @@ form,
 
 @-webkit-keyframes animatebottom {
   from {
-    opacity: 0;
+    bottom: -100px;
   }
   to {
-    opacity: 1;
+    bottom: 0;
   }
 }
 
 @keyframes animatebottom {
   from {
-    opacity: 0;
+    bottom: -100px;
   }
   to {
-    opacity: 1;
+    bottom: 0;
   }
 }
 

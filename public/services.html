@@ -21,7 +21,12 @@
 
     <!--Main CSS-->
     <link rel="stylesheet" href="css/style.css" />
+
+     <!--Annimation on scroll CSS-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="icon" href="images/icon.png">
+
     <title>Services</title>
   </head>
   <body>
@@ -70,7 +75,7 @@
               padding: 4px;
             "
             onclick="openNav()"
-            >&#9776;</span
+            ><i class="fas fa-bars"></i></span
           >
         </div>
         <div class="container-fluid">
@@ -100,7 +105,7 @@
     <!---------------------------------Header Ends--------------------------------->
 
     <!---------------------------------Service Starts--------------------------------->
-    <section>
+    <section data-aos="fade-up">
         <div class="container text-center py-5 ">
             <h1 class="title">SERVICES</h1>
             <div class="row">
@@ -116,9 +121,10 @@
                         </div>
                         <div class="description">
                             <h2>TEACHING</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum vero beatae aut? 
-                                Repudiandae ex corrupti atque, minus temporibus natus laudantium quod dolor unde, 
-                                saepe velit illum dolorum cum ipsum neque?</p>
+                            <p>Can teach chemistry to school, college, O level, A level and university level students. Having a good
+                              experience of teaching chemistry. Always tries to teach student and convey lecture on their level of 
+                              understanding.
+                            </p>
                         </div>
                         <div class="shapes">
                             <div class="shape-4"></div>
@@ -179,7 +185,7 @@
 
     <!---------------------------------Testimonial Starts--------------------------------->
     <section class="testimonial py-5">
-        <div class="container text-center py-5">
+        <div class="container text-center py-5" data-aos="zoom-in-up">
           <h1>TESTIMONIAL</h1>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -190,30 +196,36 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="image-area">
-                  <img src="images/bilal.jpg" alt="">
+                  <img src="images/Dr_Safaraz.jpeg" alt="image">
                 </div>
-                <h4>Bilal Mir</h4>
-                <h5>Software Engineer</h5>
-                <p><i class="fas fa-quote-left pr-2"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni corporis,
-                   quaerat obcaecati vero placeat saepe? A perferendis beatae repellat 
-                   quae saepe quisquam? Quae accusamus tempora doloremque quia animi. At, quam. <i class=" fas fa-quote-right pl-2"></i></p>   
+                <h4>Dr Sarfaraz Ahemd Mahesar</h4>
+                <h5>Assoicate Professor</h5>
+                <h6>NCEAC</h6>
+                <p><i class="fas fa-quote-left pr-2"></i>
+                  He is one of my brilliant and extraordinary student. 
+                  He has completed his research and project in excellent and professional way.
+                  As his supervisor I'm proud on his hardwork and dedication 
+                  towards his subject. Keep it up young man.
+                   <i class=" fas fa-quote-right pl-2"></i></p>   
               </div>
               <div class="carousel-item">
                 <div class="image-area">
-                  <img src="images/bilal.jpg" alt="">
+                  <img src="images/Dr_Sayed.jpeg" alt="image">
                 </div>
-                <h4>Bilal Mir</h4>
-                <h5>Software Engineer</h5>
+                <h4>Dr Sayed Tufail</h4>
+                <h5>Professor</h5>
+                <h6>NCEAC</h6>
                 <p><i class="fas fa-quote-left pr-2"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni corporis,
                   quaerat obcaecati vero placeat saepe? A perferendis beatae repellat 
                   quae saepe quisquam? Quae accusamus tempora doloremque quia animi. At, quam. <i class="fas fa-quote-right pl-2"></i></p>
               </div>
               <div class="carousel-item">
                 <div class="image-area">
-                  <img src="images/bilal.jpg" alt="">
+                  <img src="images/Tarique.jfif" alt="">
                 </div>
-                <h4>Bilal Mir</h4>
-                <h5>Software Engineer</h5>
+                <h4>Tarique Panhwar</h4>
+                <h5>Scientific Officer</h5>
+                <h6>Lahore Mint</h6>
                 <p><i class="fas fa-quote-left pr-2"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni corporis,
                   quaerat obcaecati vero placeat saepe? A perferendis beatae repellat 
                   quae saepe quisquam? Quae accusamus tempora doloremque quia animi. At, quam. <i class="fas fa-quote-right pl-2"></i></p>
@@ -234,8 +246,8 @@
 
 
     <!---------------------------------Contact Starts--------------------------------->
-    <section class="contact" id="contact-me">
-        <div class="container text-center py-5">
+    <section class="contact" id="contact-me" >
+        <div class="container text-center py-5" data-aos="flip-left">
           <h1 class="title">CONTACT</h1>
           <div class="row">
             <div class="col-sm-12">
@@ -292,9 +304,10 @@
             <div class="col-lg-5 pb-5 px-5">
               <a class="logo" href="#">The Chemist</a>
               <p>
-                Dedicated and passionate towards chemistry. <br>
-                HELLO! myself Aijaz Ali a professional chemist,<br>
-                for me chemistry is just an another word for love.
+                A professional chemist with good experience.  
+                Done my MPhil in Analytical Chemistry in which I did 
+                research on the project "Producation Of Biodiesel From Spent Bleaching
+                Clay" from NCEAC located in University of Sindh, Jamshoro.
               </p>
             </div>
             <div class="col-lg-2  pb-5 px-5"">
@@ -321,9 +334,10 @@
               </ul>           
             </div>
         </div>
-        <hr width="95%">
-        <div>
-          <p class="text-center" style="font-weight: 600;">© All Rights reserved 2020 The Chemist.</p>
+        <hr width="100%">
+        <div class="end-footer">
+          <p>© All Rights reserved 2020 The Chemist.</p>
+          <p>Design & Deveveloped by <a href="https://thewebsters.netlify.app/index.html#" target="_blank"><img src="images/webster.png" alt="image" width="100px" height="20px"></a></p>   
         </div>
         <div class="scrolltop float-right">
           <i class="fa-2x fa fa-angle-up" id="myBtn"></i>
@@ -358,5 +372,14 @@
 
     <!--Heading Text Animation JS-->
     <script src="js/split.js"></script>
+
+    <!--Annimattion on scroll JS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset : 250,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
